@@ -21,13 +21,15 @@ const newCycleFormValidationSchema = zod.object({
     .max(60, "The cycle must be a maximum of 60 minutes"),
 });
 
-interface newCycleFormData {
-  task: string;
-  minutesAmount: number;
-}
+// interface newCycleFormData {
+//   task: string;
+//   minutesAmount: number;
+// }
+
+type newCycleFormData = zod.infer<typeof newCycleFormValidationSchema>;
 
 export function Home() {
-  const { register, handleSubmit, watch } = useForm<newCycleFormData>({
+  const { register, handleSubmit, watch, reset } = useForm<newCycleFormData>({
     resolver: zodResolver(newCycleFormValidationSchema),
     defaultValues: {
       task: "",
@@ -37,6 +39,7 @@ export function Home() {
 
   function handleCreateNewTimer(data: newCycleFormData) {
     console.log(data);
+    reset();
   }
 
   const task = watch("task");
