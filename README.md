@@ -1,30 +1,15 @@
-# React + TypeScript + Vite
+# POMODORO TIMER
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+In this project, I used Vite to start the aplication with React + TypeScript.
 
-Currently, two official plugins are available:
+The figma to construct the layout was:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- [pomodoro-timer](<https://www.figma.com/file/h1LId44vl4Av8DLgn3knJF/Ignite-Timer-(Community)?type=design&node-id=0-1&mode=design&t=8S1uEsgSAPOM4Xvs-0>)
 
-## Expanding the ESLint configuration
+## In this project I learn:
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+- How to style React components using the library _STYLED-COMPONENTS_.
+- How to managed pages using _REACT ROUTER DOM_ to the clock page and the history page.
+- how to transmit component information for use in different places in the application through the _REACT CONTEXT API_.
+- Use _REDUCERS_, for formatting and use when working with multiple and more complex information.
+- Form validations through _ZOD_, as well as with _react-hook-form-resolvers_.
