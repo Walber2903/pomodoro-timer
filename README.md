@@ -13,3 +13,5 @@ The figma to construct the layout was:
 - how to transmit component information for use in different places in the application through the _REACT CONTEXT API_.
 - Use _REDUCERS_, for formatting and use when working with multiple and more complex information.
 - Form validations through _ZOD_, as well as with _react-hook-form-resolvers_.
+
+### You can find a preview working in this link [pomodo-timer-working](<https://pomodoro-timer-gray.vercel.app/>)
